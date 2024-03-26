@@ -13,7 +13,7 @@ void insert() {
     hash2 = 7 - (key % 7);
     for (i = 0; i < TABLE_SIZE; i++) {
         index = (hkey + i * hash2) % TABLE_SIZE;
-        if (h[index] == -1) {
+        if (h[index] == 0) {
             h[index] = key;
             printf("Element %d inserted at index %d\n", key, index);
             break;
